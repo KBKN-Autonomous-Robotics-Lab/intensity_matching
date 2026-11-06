@@ -363,23 +363,23 @@ source install/setup.bash
 
 実際に使用するLaunchファイルを記載する。
 
-**Global Map作成時**
-・bagで作成することを想定
+**Global Map作成時**<br>
+・bagで作成することを想定<br>
 ・use_sim_time:=true
 ```bash
 ros2 bag play xxx --clock
 ros2 launch intensity_matching make_globalmap.launch.xml
 ```
 
-**シミュレーション上でのマッチング時**
-・bagでシミュレーションすることを想定
+**シミュレーション上でのマッチング時**<br>
+・bagでシミュレーションすることを想定<br>
 ・use_sim_time:=true
 ```bash
 ros2 bag play xxx --clock
 ros2 launch intensity_matching map_matching.launch.xml
 ```
 
-**実環境上でのマッチング時**
+**実環境上でのマッチング時**<br>
 ・use_sim_time:=false
 ```bash
 ros2 bag play xxx --clock
